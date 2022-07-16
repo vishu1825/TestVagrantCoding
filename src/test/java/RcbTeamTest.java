@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
  *
  *
  */
-public class RCBTeamTest {
+public class RcbTeamTest {
 
     @Test(description="Validate that team has only 4 foreign players in playing 11")
     public void verifyForeignPlayerCountTest(Method m){

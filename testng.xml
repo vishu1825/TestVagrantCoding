@@ -3,7 +3,7 @@
 <suite name="Suite">
     <test name="Test">
         <classes>
-            <class name="RCBTeamTest"/>
+            <class name="RcbTeamTest"/>
         </classes>
     </test>
 </suite>
