@@ -77,7 +77,7 @@ public class FrameworkUtils {
         }
 
         /**
-         * Get the country count from the json array
+         * Get the role count from the json array
          *
          * July 16, 2022
          * @author Vishwajeet Samal
