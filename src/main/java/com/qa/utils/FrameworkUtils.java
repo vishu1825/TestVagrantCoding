@@ -89,7 +89,7 @@ public class FrameworkUtils {
             int count = 0;
             for (Object list : companyList) {
                 jsonObject = (JSONObject) list;
-                String roleName = (String) jsonObject.get("role");
+                String roleName = (String) jsonObject.get(Field.ROLE.property);
 
                 if (roleName.equals(role)) {
                     count++;
