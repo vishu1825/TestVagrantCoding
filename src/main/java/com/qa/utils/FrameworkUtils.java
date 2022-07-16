@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 import com.qa.constants.FrameworkConstant;
+import com.qa.enums.Field;
 import com.qa.exceptions.CustomizeException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -33,7 +34,7 @@ public class FrameworkUtils {
                 e.printStackTrace();
             }
             jsonObject = (JSONObject) object;
-            companyList = (JSONArray) Objects.requireNonNull(jsonObject).get("player");
+            companyList = (JSONArray) Objects.requireNonNull(jsonObject).get(Field.PLAYER.property);
             return companyList;
         }
 
@@ -65,7 +66,7 @@ public class FrameworkUtils {
             int count = 0;
             for (Object list : companyList) {
                 jsonObject = (JSONObject) list;
-                String countryName = (String) jsonObject.get("country");
+                String countryName = (String) jsonObject.get(Field.COUNTRY.property);
 
                 if (!countryName.equals(country)) {
                     count++;
