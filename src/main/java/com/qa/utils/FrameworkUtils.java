@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Objects;
 
+import com.qa.constants.FrameworkConstant;
 import com.qa.exceptions.CustomizeException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -21,7 +22,7 @@ public class FrameworkUtils {
             JSONParser parser = new JSONParser();
             FileReader fileReader = null;
             try {
-                fileReader = new FileReader(System.getProperty("user.dir")+"/src/test/resources/team.json");
+                fileReader = new FileReader(FrameworkConstant.getJSONFILEPATH());
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
