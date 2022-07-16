@@ -8,6 +8,7 @@ d)json 20220320
 
 Steps to execute :-
 1.Clone the project using git clone 
+
 2.Run the testng.xml directly or from terminal/cmd navigate inside the project and execute the command "mvn test"
 
 
