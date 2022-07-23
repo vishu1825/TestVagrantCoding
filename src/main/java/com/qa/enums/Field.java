@@ -13,7 +13,8 @@ public enum Field {
 
     PLAYER("player"),
     COUNTRY("country"),
-    ROLE("role");
+    ROLE("role"),
+    PRICE("price-in-crores");
     public final String property;
 
     Field(String property){
