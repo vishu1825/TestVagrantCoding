@@ -23,5 +23,5 @@ public class FrameworkConstant {
     private static @Getter final String JSONFILEPATH=System.getProperty("user.dir") +"/src/test/resources/team.json";
     private static @Getter final String COUNTRY_NAME="India";
     private static @Getter final String ROLE="Wicket-keeper";
-    public static final double TOTAL_PRICE=36.50;
+    public static @Getter final double TOTAL_PRICE=36.50;
 }

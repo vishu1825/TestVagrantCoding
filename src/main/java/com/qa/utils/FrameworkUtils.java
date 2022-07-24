@@ -104,7 +104,7 @@ public class FrameworkUtils {
         return count;
     }
 
-    public double getTotalPrice(double price,String country) {
+    public double getTotalPrice(String country) {
         double totPrice = 0;
         checkTeamSize();
         for (Object list : playerList) {
